@@ -28,6 +28,7 @@ variable "separator" {
   prefix    = var.prefix
   length    = var.length
   separator = var.separator
+testststt
  }
 
 output "random_pet_kind" {
