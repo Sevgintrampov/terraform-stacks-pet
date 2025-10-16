@@ -11,7 +11,7 @@ deployment "complex" {
   inputs = {
     prefix    = "complex"
     instances = 3
-    length    = "3"
+    length    = "4"
     separator = "-"
   }
 }
