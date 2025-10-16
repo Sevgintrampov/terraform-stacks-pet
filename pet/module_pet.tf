@@ -28,7 +28,6 @@ variable "separator" {
   prefix    = var.prefix
   length    = var.length
   separator = var.separator
-  testdeploymentfail = ""
  }
 
 output "random_pet_kind" {
