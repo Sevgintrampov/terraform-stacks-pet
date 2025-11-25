@@ -16,10 +16,10 @@ deployment "complex" {
   }
 }
 publish_output "complex-pet" {
-  description = "The networking Stack's VPC's ID."
+  description = "The list of generated pet names for the complex deployment."
   value       = deployment.complex.pet-name
 }
 publish_output "simple-pet" {
-  description = "The networking Stack's VPC's ID."
+  description = "The generated pet name for the simple deployment."
   value       = deployment.simple.pet-name
 }
