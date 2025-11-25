@@ -37,3 +37,8 @@ component "pet" {
     random = provider.random.this
   }
 }
+output "pet-name" {
+  description = "The pet name"
+  type        = string
+  value       = component.pet.id
+}
