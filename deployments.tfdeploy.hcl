@@ -15,3 +15,11 @@ deployment "complex" {
     separator = "-"
   }
 }
+publish_output "vpc_id_network" {
+  description = "The networking Stack's VPC's ID."
+  value       = deployment.complex.pet-name
+}
+publish_output "vpc_id_network" {
+  description = "The networking Stack's VPC's ID."
+  value       = deployment.simple.pet-name
+}
