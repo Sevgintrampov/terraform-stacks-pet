@@ -38,7 +38,7 @@ component "pet" {
   }
 }
 output "pet-name" {
-  description = "The pet name"
-  type        = string
-  value       = component.pet.id
+  description = "The pet names"
+  type        = list(string) 
+  value       = component.pet.random_pet_kind 
 }
