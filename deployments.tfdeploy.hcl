@@ -1,7 +1,7 @@
 deployment "simple" {
   inputs = {
     prefix    = "simple"
-    instances = 1
+    instances = 4
     length    = "2"
     separator = "-"
   }
@@ -10,17 +10,17 @@ deployment "simple" {
 deployment "complex" {
   inputs = {
     prefix    = "complex"
-    instances = 3
+    instances = 6
     length    = "3"
     separator = "-"
   }
 }
 publish_output "complex_pet" {
   description = "The list of generated pet names for the complex deployment."
-  value       = deployment.complex.outputs.pet-name
+  value       = deployment.complex.pet_name
 }
 
 publish_output "simple_pet" {
   description = "The generated pet name for the simple deployment."
-  value       = deployment.simple.pet-name
+  value       = deployment.simple.pet_name
 }
