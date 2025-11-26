@@ -22,5 +22,5 @@ publish_output "complex-pet" {
 
 publish_output "simple-pet" {
   description = "The generated pet name for the simple deployment."
-  value       = deployment.simple.outputs.pet-name
+  value       = deployment.simple.pet-name
 }
